@@ -1,0 +1,357 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    background-color: #f490b1;
+    text-align: center;
+}
+
+.banner p{
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding: 10px;
+}
+
+/*.underline{*/
+    /*width: 40%;*/
+    /*margin: auto;*/
+    /*border-bottom: 1px solid #473840;*/
+/*}*/
+
+@keyframes rubberBand {
+    0% {transform: scale(1);}
+    30% {transform: scaleX(1.25) scaleY(0.75);}
+    40% {transform: scaleX(0.75) scaleY(1.25);}
+    60% {transform: scaleX(1.15) scaleY(0.85);}
+    100% {transform: scale(1);}
+}
+
+#title-section{
+    background-image: url("../images/mountains-background.jpg");
+    height: 80vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 50% 40px;
+    border-bottom-right-radius: 50% 40px;
+    border-bottom: 5px solid white;
+    box-shadow: 0 0 40px 0px lightslategrey;
+}
+
+.navigation{
+    z-index: 100;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    flex-direction: row;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px -15px salmon;
+}
+
+.navigation p{
+    padding: 30px;
+    color: #473840;
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: bolder;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.navigation p:hover{
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.name-career{
+    position: absolute;
+    top: 35%
+}
+
+.name-career h1{
+    line-height: 1;
+    font-size: 122px;
+    font-family: "Myriad Pro", sans-serif;
+    color: white;
+    text-shadow:    0px 3px 0px #b2a98f,
+                    0px 14px 10px rgba(0,0,0,0.15),
+                    0px 8px 2px rgba(0,0,0,0.1),
+                    0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.name-career p{
+    line-height: 0;
+    font-size: 32px;
+    color: white;
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: lighter;
+    text-shadow:    0px 3px 0px #b2a98f,
+                    0px 14px 10px rgba(0,0,0,0.15),
+                    0px 8px 2px rgba(0,0,0,0.1),
+                    0px 34px 30px rgba(0,0,0,0.1);
+    animation: 1.5s rubberBand running;
+}
+
+
+/* THE END OF THE TITLE PAGE AND THE BEGINNING OF THE ABOUT SECTION */
+/* THE END OF THE TITLE PAGE AND THE BEGINNING OF THE ABOUT SECTION */
+/* THE END OF THE TITLE PAGE AND THE BEGINNING OF THE ABOUT SECTION */
+
+
+
+#about-section{
+    padding: 6%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about-section h1{
+    font-size: 36px;
+    font-family: "Myriad Pro", sans-serif;
+    color: #473840;
+    margin-bottom: 15px;
+}
+
+#about-section p{
+    font-family: "Myriad Pro", sans-serif;
+    color: #897480;
+    line-height: 1.5;
+}
+
+/* THE END OF THE ABOUT PAGE AND THE BEGINNING OF THE PORT SECTION */
+/* THE END OF THE ABOUT PAGE AND THE BEGINNING OF THE PORT SECTION */
+/* THE END OF THE ABOUT PAGE AND THE BEGINNING OF THE PORT SECTION */
+
+#portfolio-section{
+    padding: 6%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 50% 40px;
+    border-top-right-radius: 50% 40px;
+    border-bottom-left-radius: 50% 40px;
+    border-bottom-right-radius: 50% 40px;
+    border-bottom: 5px solid white;
+    box-shadow: 0 0 40px 0px lightslategrey;
+    margin-bottom: 100px;
+}
+
+.project-section{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+.project-image{
+    width: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 40px -5px lightslategrey
+}
+
+.chirper-app{
+    background-image: url("../images/chirper-one.jpg");
+}
+.innovate-within{
+    background-image: url("../images/innovate-within.jpg");
+}
+.sales-marketing{
+    background-image: url("../images/sales-marketing.jpg");
+}
+
+.project-description{
+    width: 45%;
+}
+
+.project-section h2{
+    font-size: 36px;
+    font-family: "Myriad Pro", sans-serif;
+    color: #473840;
+    margin-bottom: 15px;
+}
+
+.project-section p{
+    font-family: "Myriad Pro", sans-serif;
+    color: #897480;
+    line-height: 1.5;
+}
+
+#personal-section{
+    background-image: url("../images/mountains-background-dark.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: inset 0px 0px 53px 3px rgba(0,0,0,0.26);
+    /*border-bottom-left-radius: 100% 40px;*/
+    /*border-bottom-right-radius: 100% 40px;*/
+}
+
+#personal-section div{
+    flex-direction: column;
+    max-width: 25%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#personal-section img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+#personal-section p{
+    padding-top: 20px;
+    font-family: "Myriad Pro", sans-serif;
+    color: white;
+    line-height: 1.5;
+}
+
+#contact-section{
+    padding: 6%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#contact-section h1{
+    font-size: 36px;
+    font-family: "Myriad Pro", sans-serif;
+    color: #473840;
+    margin-bottom: 15px;
+}
+
+#contact-section p{
+    font-family: "Myriad Pro", sans-serif;
+    color: #897480;
+    line-height: 1.5;
+}
+
+#contact-section h3{
+    font-family: "Myriad Pro", sans-serif;
+    color: #473840;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+
+.footer{
+    border-top-left-radius: 100% 20px;
+    border-top-right-radius: 100% 20px;
+    text-align: center;
+    max-width: 70%;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d5b0b7;
+    opacity: .7;
+    box-shadow: inset 0px 0px 33px -4px rgba(0,0,0,0.75);
+}
+
+.footer img{
+    padding: 2%;
+    max-height: 40px;
+    max-width: 40px;
+}
+
+/* TABLET STYLING */
+@media screen and (max-width: 900px){
+    #contact-section{
+        margin-bottom: 50px;
+    }
+    .footer img{
+        max-width: 25px;
+        max-height: 25px;
+    }
+}
+
+/* MOBILE STYLING */
+@media screen and (max-width: 600px){
+    #title-section{
+        height: 60vh;
+    }
+    .name-career{
+        top: 45%;
+    }
+    .name-career h1{
+        font-size: 4em;
+    }
+    .name-career p{
+        font-size: 1.2em;
+    }
+    .navigation{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .navigation p{
+        padding: 10px;
+    }
+    #personal-section{
+        flex-direction: column;
+    }
+    #personal-section div{
+        max-width: 70%;
+    }
+    .footer{
+        border-top-left-radius: 100% 20px;
+        border-top-right-radius: 100% 20px;
+        max-width: 100%;
+    }
+    .footer img{
+        max-width: 45px;
+        max-height: 45px;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .project-section{
+        flex-direction: column-reverse !important;
+        align-items: center;
+        height: initial;
+    }
+    .project-image{
+        height: 300px;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width: 80%;
+        margin-top: 10%;
+    }
+    .project-description{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        width: 80%;
+    }
+
+}
