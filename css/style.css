@@ -159,6 +159,7 @@
     flex-direction: row;
     height: 300px;
     margin-bottom: 80px;
+    margin-top: 50px;
 }
 
 .project-image{
@@ -177,6 +178,9 @@
 }
 .sales-marketing{
     background-image: url("../images/sales-marketing.jpg");
+}
+.clearpath{
+    background-image: url("../images/clearpath.jpg");
 }
 
 .project-description{
@@ -274,7 +278,7 @@
     margin-right: auto;
     background-color: #d5b0b7;
     opacity: .7;
-    box-shadow: inset 0px 0px 33px -4px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
 }
 
 .footer img{

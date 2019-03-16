@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Max Dryer</title>
+    <link rel="shortcut icon" type="image/png" href="images/site-logo.png"/>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script rel="script" type="text/javascript" src="index.js"></script>
 </head>
@@ -16,7 +17,7 @@
     <section id="title-section">
         <div class="navigation">
             <p onclick="document.getElementById('about-section').scrollIntoView({behavior: 'smooth'});">ABOUT</p>
-            <p onclick="document.getElementById('portfolio-section').scrollIntoView({behavior: 'smooth'});">PORTFOLIO</p>
+            <p onclick="document.getElementById('portfolio-scrollto').scrollIntoView({behavior: 'smooth'});">PORTFOLIO</p>
             <p onclick="document.getElementById('personal-section').scrollIntoView({behavior: 'smooth'});">PERSONAL</p>
             <p onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'});">CONTACT</p>
             <a href="images/Max_Dryer_Resume_2019.pdf" target="_blank"><p>RESUME</p></a>
@@ -48,7 +49,7 @@
     <!--<div class="underline"></div>-->
 
     <section id="portfolio-section">
-        <div class="project-section">
+        <div class="project-section" id="portfolio-scrollto">
             <div class="project-image innovate-within" style="margin-right: 10%">
 
             </div>
@@ -111,13 +112,34 @@
                 </p>
             </div>
         </div>
+
+        <div class="project-section" style="flex-direction: row-reverse">
+            <div class="project-image clearpath">
+
+            </div>
+            <div class="project-description" style="margin-right: 10%">
+                <h2>Clearpath [ DCP* ]</h2>
+                <p>
+                    Clearpath, also known as Dual Credit Pathways, was, for me, an
+                    adventure in CSS/Javascript animations. This Wordpress site
+                    was created in just a few weeks, is completely dynamic in all of
+                    it's content. It's purpose is to allow high school students to
+                    explore collegiate dual credit options at Ball State University.
+                    <br><br>
+                    The team of developers was tasked with creating a three tiered system
+                    of categories, sub-categories, and posts, which a user could
+                    navigate through in an interactive, animated system of clicks. These
+                    circles, while they look simple, caused many a headache!
+                </p>
+            </div>
+        </div>
     </section>
 
 
     <section id="personal-section">
         <div class="image-description">
             <img src="images/gears.png">
-            <p>I'm a very mathematical thinker, and dream of one day going back to school for some kind of engineering.</p>
+            <p>I'm a very mathematical thinker, and dream of one day going back to school for some form of engineering.</p>
         </div>
         <div class="image-description">
             <img src="images/people.png">
@@ -141,8 +163,8 @@
 </body>
 
 <footer class="footer">
-    <img src="images/phone.png">
-    <img src="images/location.png">
-    <img src="images/facebook.png">
+    <img src="images/phone.png" title="260-610-8002">
+    <img src="images/location.png" title="mjdryer@msn.com">
+    <img src="images/facebook.png" title="https://www.facebook.com/max.dryer.3">
 </footer>
 </html>
