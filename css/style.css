@@ -5,7 +5,7 @@
 }
 
 .banner{
-    background-color: #f490b1;
+    background-color: #16171c;
     text-align: center;
 }
 
@@ -30,39 +30,25 @@
     100% {transform: scale(1);}
 }
 
-#title-section{
-    background-image: url("../images/mountains-background.jpg");
-    height: 80vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-bottom-left-radius: 50% 40px;
-    border-bottom-right-radius: 50% 40px;
-    border-bottom: 5px solid white;
-    box-shadow: 0 0 40px 0px lightslategrey;
-}
-
 .navigation{
+    justify-content: center;
     z-index: 100;
     display: flex;
-    padding-left: 20%;
-    padding-right: 20%;
+    /*padding-left: 20%;*/
+    /*padding-right: 20%;*/
+    width: 100%;
     flex-direction: row;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    padding-top: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 50px -15px salmon;
+    /*border-bottom-left-radius: 100%;*/
+    /*border-bottom-right-radius: 100%;*/
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 50px -15px darkgray;
 }
 
-.navigation p{
+.navigation li{
+    list-style: none;
     padding: 30px;
-    color: #473840;
-    font-family: "Myriad Pro", sans-serif;
+    color: #16171c;
+    font-family: "Shree Devanagari 714", sans-serif;
     font-weight: bolder;
     opacity: 0.5;
     cursor: pointer;
@@ -73,7 +59,7 @@
     text-decoration: none;
 }
 
-.navigation p:hover{
+.navigation li:hover{
     opacity: 1;
     transition: .3s ease;
 }
@@ -81,6 +67,22 @@
 .name-career{
     position: absolute;
     top: 35%
+}
+
+#title-section{
+    background-image: url("../images/tech-background-01.svg");
+    height: 82vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /*border-bottom-left-radius: 50% 40px;*/
+    /*border-bottom-right-radius: 50% 40px;*/
+    border-bottom: 5px solid white;
+    box-shadow: 0 0 40px 0px lightslategrey;
 }
 
 .name-career h1{
@@ -95,6 +97,7 @@
 }
 
 .name-career p{
+    padding-left: 1%;
     line-height: 0;
     font-size: 32px;
     color: white;
@@ -126,13 +129,13 @@
 #about-section h1{
     font-size: 36px;
     font-family: "Myriad Pro", sans-serif;
-    color: #473840;
+    color: #404934;
     margin-bottom: 15px;
 }
 
 #about-section p{
     font-family: "Myriad Pro", sans-serif;
-    color: #897480;
+    color: #949c89;
     line-height: 1.5;
 }
 
@@ -167,20 +170,93 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 10px 10px 40px -5px lightslategrey
+    box-shadow: 10px 10px 40px -5px lightslategrey;
+    transition: .5s ease all;
 }
 
 .chirper-app{
     background-image: url("../images/chirper-one.jpg");
 }
+.chirper-app:hover{
+    background-image: url("../images/chirper-one-color.jpg");
+}
+.project-image:hover{
+    width: 46%;
+    transition: .5s ease all;
+    box-shadow: 20px 20px 40px -5px slategray;
+}
+
+
+/* THIS IS MY TEST LAND */
+
+.project-image {
+    border: 0;
+    box-sizing: border-box;
+    position: relative;
+    vertical-align: middle;
+}
+.project-image::before, .project-image::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.draw {
+    transition: color 0.25s;
+}
+.draw::before, .draw::after {
+    border: 3px solid transparent;
+    width: 0;
+    height: 0;
+}
+.draw::before {
+    top: 0;
+    left: 0;
+}
+.draw::after {
+    bottom: 0;
+    right: 0;
+}
+.draw:hover {
+    color: white;
+}
+.draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.draw:hover::before {
+    border-top-color: white;
+    border-right-color: white;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+    border-bottom-color: white;
+    border-left-color: white;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+/* THIS IS MY TEST LAND */
+
+
 .innovate-within{
     background-image: url("../images/innovate-within.jpg");
+}
+.innovate-within:hover{
+    background-image: url("../images/innovate-within-color.jpg");
 }
 .sales-marketing{
     background-image: url("../images/sales-marketing.jpg");
 }
+.sales-marketing:hover{
+    background-image: url("../images/sales-marketing-color.jpg");
+}
 .clearpath{
     background-image: url("../images/clearpath.jpg");
+}
+.clearpath:hover{
+    background-image: url("../images/clearpath-color.jpg");
 }
 
 .project-description{
@@ -190,18 +266,18 @@
 .project-section h2{
     font-size: 36px;
     font-family: "Myriad Pro", sans-serif;
-    color: #473840;
+    color: #404934;
     margin-bottom: 15px;
 }
 
 .project-section p{
     font-family: "Myriad Pro", sans-serif;
-    color: #897480;
+    color: #949c89;
     line-height: 1.5;
 }
 
 #personal-section{
-    background-image: url("../images/mountains-background-dark.png");
+    background-image: url("../images/personal-background-dark.svg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -246,22 +322,22 @@
     margin-top: 50px;
 }
 
-#contact-section h1{
+    #contact-section h1{
     font-size: 36px;
     font-family: "Myriad Pro", sans-serif;
-    color: #473840;
+    color: #404934;
     margin-bottom: 15px;
 }
 
 #contact-section p{
     font-family: "Myriad Pro", sans-serif;
-    color: #897480;
+    color: #949c89;
     line-height: 1.5;
 }
 
 #contact-section h3{
     font-family: "Myriad Pro", sans-serif;
-    color: #473840;
+    color: #404934;
     margin-top: 15px;
     font-weight: bolder;
 }
@@ -276,7 +352,7 @@
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #d5b0b7;
+    background-color: #727c67;
     opacity: .7;
     box-shadow: inset 0px 0px 20px -4px rgba(0,0,0,0.75);
 }
@@ -298,19 +374,17 @@
     }
 }
 
+@media screen and (max-width: 800px){
+    #title-section {
+        background-image: url("../images/plant-tablet-01-01.svg");
+    }
+}
+
 /* MOBILE STYLING */
 @media screen and (max-width: 600px){
     #title-section{
         height: 60vh;
-    }
-    .name-career{
-        top: 45%;
-    }
-    .name-career h1{
-        font-size: 4em;
-    }
-    .name-career p{
-        font-size: 1.2em;
+        background-image: url("../images/plant-mobile-01.svg");
     }
     .navigation{
         flex-direction: column;
