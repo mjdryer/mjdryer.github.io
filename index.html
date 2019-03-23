@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Max Dryer</title>
     <link rel="shortcut icon" type="image/png" href="images/site-logo.png"/>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -156,15 +157,18 @@
         <p>if you're interested in having a personal or company website designed and built, either from start to finish, or maybe
         just a feature here or there, feel free to reach out to me at any time via email or phone. i usually respond within
         just a few business days</p>
-        <h3>mjdryer@msn.com</h3>
-        <h3>260-610-8002</h3>
     </section>
 
 </body>
 
 <footer class="footer">
-    <img src="images/phone.png" title="260-610-8002">
-    <img src="images/location.png" title="mjdryer@msn.com">
-    <img src="images/facebook.png" title="https://www.facebook.com/max.dryer.3">
+    <img src="images/phone.png" title="260-610-8002" onclick="document.querySelector('.phone-hover').classList.toggle('phone-hover-click')">
+    <p class="phone-hover">I can be reached during most hours at my cell phone, (260) 610-8002</p>
+
+    <img src="images/location.png" title="mjdryer@msn.com" onclick="document.querySelector('.email-hover').classList.toggle('email-hover-click')">
+    <p class="email-hover"> You can reach out to me via email at either mjdryer@msn.com or mjdryer@bsu.edu</p>
+
+    <img src="images/facebook.png" title="https://www.facebook.com/max.dryer.3" onclick="document.querySelector('.facebook-hover').classList.toggle('facebook-hover-click')">
+    <p class="facebook-hover">Click <a href="https://www.facebook.com/max.dryer.3" target="_blank">here</a> to link to my personal Facebook page.</p>
 </footer>
 </html>
